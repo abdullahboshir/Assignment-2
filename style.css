@@ -1,21 +1,31 @@
 /**************** font *****************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
-
 /**************** common style *****************/
 * {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 /*************** end common style *****************/
 
 
 
+
+
 /**************** start hero section *****************/
+
+#container {
+    max-width: 1344px;
+    overflow-x: hidden;
+}
+
 #hero-section {
     display: flex;
     justify-content: center;
     margin: 80px 0;
+    overflow: hidden;
 }
 
 .fifty {
@@ -26,6 +36,8 @@
 .title {
     width: 500px;
     font-size: 30px;
+    margin: 50px 0 0 30px;
+    
 }
 
 .hero-photos{
@@ -54,12 +66,13 @@
 }
 
 .title-info button{
-    background-color: #7bc42d;
+    background-color: #00adef;
     height: 44px;
     width: 198px;
     border-radius: 41px;
     border: 0;
     font-size: 16px;
+    margin-top: 15px;
 }
 
 .title-info button a {
@@ -79,6 +92,7 @@
 hr {
     width: 1010px;
     border-top: 1px solid #c0ccda77;
+    margin-left: 130px;
 }
 
 .brand-logo {
@@ -90,7 +104,7 @@ hr {
 
 .brand-logo img {
     width: 84px;
-    padding-left: 45px;
+    padding-left: 50px;
 }
 /**************** end brand logo section *****************/
 
@@ -102,7 +116,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 340px);
     grid-row-gap: 30px;
-    width: 1250px;
+    width: 1280px;
     margin-top: 30px;
     justify-content: center;
 }
@@ -113,13 +127,17 @@ hr {
     padding: 15px;
 }
 
+.card img {
+    width: 280px;
+}
+
 #popular-section h1 {
     text-align: center;
     margin-top: 70px;
 }
 
 .card-info {
-    width: 200px;
+    width: 250px;
 }
 
 .card-info h2{
@@ -141,4 +159,288 @@ hr {
 .card-info .fas {
     color: orange;
 }
+
+#popular-section a {
+    color: #00adef;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 141px;
+    margin-top: 30px;
+}
 /**************** end popular brand logo section *****************/
+
+
+
+/**************** start featured section *****************/
+#feature-section {
+    width: 1200px;
+    margin-top: 60px;
+}
+
+.feature {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 50px 0 50px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.feature-info {
+    margin-top: 20px;
+}
+
+.feature .width-60 {
+   width: 60%; 
+}
+
+.feature .width-40 {
+    width: 40%;
+}
+
+.feature-info h1 {
+   font-size: 35px;
+}
+
+.feature-image {
+    margin-left: 55px;
+}
+
+.feature img {
+    width: 350px;
+}
+
+.feature p {
+    width: 500px;
+    color: gray;
+}
+
+#feature-section button{
+    background-color: #00adef;
+    height: 40px;
+    width: 135px;
+    border: 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#feature-section button a {
+    text-decoration: none;
+    color: white;
+}
+/**************** end featured section *****************/
+
+
+
+
+/**************** start footer area *****************/
+footer .footer-area{
+    text-align: center;
+    height: 230px;
+    background-color: rgb(3, 1, 36);
+    margin-top: 80px;
+}
+
+.footer-area .text-area h1 {
+    padding-top: 55px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+
+.footer-area .text-area p {
+    font-size: 13px;
+    color: rgb(192, 189, 189);
+    padding-top: 5px;
+}
+
+.footer-area .icons {
+    color: white;
+    margin-top: 10px;
+}
+
+.icons .fab {
+    padding: 15px;
+}
+/**************** end footer area *****************/
+
+
+
+
+
+/******************************** 
+start media queries for responsive
+ *******************************/
+@media only screen and (max-width:688px)  {
+    #container{
+        width: 100%;
+    }
+
+    /**************** start hero section *****************/
+    #hero-section{
+      flex-direction: column;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+       
+       
+    }
+
+    .hero-photos img {
+        width: 350px;
+    }
+
+    .hero-img img{
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+    .hero-photos {
+        left: 0;
+    }
+    .title {
+        text-align: center;
+    }
+
+    .title-info button {
+        height: 60px;
+        width: 250px;
+        margin-top: 30px;
+        font-size: 18px;
+    } 
+    /**************** end hero section *****************/
+
+
+
+/**************** start brand logo section *****************/
+    hr {
+        width: 500px;
+        border-top: 1px solid #c0ccda77;
+        margin-left: 50px;
+    }
+    
+    .brand-logo {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 2em;
+
+    }
+    
+    .brand-logo img {
+        width: 80px;
+        padding-left: 30px;
+    }
+/**************** end brand logo section *****************/
+
+
+
+/**************** start popular-section *****************/
+    .all-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    .card {
+        width: 400px;
+        padding: 15px;
+    }
+    .card img {
+        width: 400px;
+    }
+
+    .card-info {
+        width: 350px;
+    }
+    
+    .card-info h2{
+        margin-bottom: 5px;
+        font-size: 35px;
+    }
+    
+    
+    .card-info h3{
+        font-size: 25px;
+        margin: 5px 0 5px 0;
+    }
+    .card-info p{
+        margin: 5px 0 5px 0;
+        color: gray;
+        font-size: 17px;
+    }
+    /**************** end popular-section *****************/
+
+
+
+
+    /**************** end  feature-section *****************/
+    .feature {
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    
+    .feature-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .feature .width-60 {
+       width: 40%; 
+    }
+    
+    
+    .feature-info h1 {
+       font-size: 35px;
+    }
+    
+    .feature-image {
+        margin-top: 25px;
+    }
+    
+    .feature img {
+        width: 350px;
+    }
+    
+    .feature p {
+        width: 500px;
+        color: gray;
+        font-size: 17px;
+    }
+    
+    #feature-section button{
+        background-color: #00adef;
+        height: 50px;
+        width: 170px;
+        border: 0;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    #feature-section button a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    #popular-section a {
+       font-size: 18px;
+    }
+
+    .fa-arrow-right {
+        margin-left: 10px;
+    }
+}
+/**************** end  feature-section *****************/
+
+
+
+/******************************** 
+end media queries for responsive
+ *******************************/
