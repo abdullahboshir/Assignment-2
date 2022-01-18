@@ -22,13 +22,13 @@
 }
 
 #header .logo {
-    margin-left: 100px;
+    margin-left: 85px;
     font-size: 13px;
 }
 
 #header .navber ul {
     display: flex;
-    padding-right: 70px;
+    padding-right: 80px;
 }
 
 #header .navber ul li {
