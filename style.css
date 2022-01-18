@@ -5,11 +5,41 @@
 * {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 /*************** end common style *****************/
 
+
+
+
+/**************** start navber *****************/
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#header .logo {
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+#header .navber ul {
+    display: flex;
+    padding-right: 70px;
+}
+
+#header .navber ul li {
+ padding-right: 30px;
+}
+
+#header .navber ul li a {
+    color: black;
+    font-weight: 500;
+   }
+/**************** end navber *****************/
 
 
 
@@ -277,12 +307,49 @@ start media queries for responsive
         width: 100%;
     }
 
+    /**************** start navber *****************/
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+        width: 100vw;
+    }
+    
+    #header .logo {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    
+    #header .navber ul {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0  0 55px;
+        
+    }
+    
+    #header .navber ul li {
+     
+    }
+
+    .navber .none {
+        display: none;
+    }
+    
+    #header .navber ul li a {
+        color: black;
+        font-weight: 500;
+       }
+    /**************** end navber *****************/
+
+
+
     /**************** start hero section *****************/
     #hero-section{
       flex-direction: column;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
+      margin-top: 40px;
        
        
     }
@@ -315,9 +382,7 @@ start media queries for responsive
 
 /**************** start brand logo section *****************/
     hr {
-        width: 500px;
-        border-top: 1px solid #c0ccda77;
-        margin-left: 50px;
+        display: none;
     }
     
     .brand-logo {
@@ -327,9 +392,8 @@ start media queries for responsive
         justify-content: center;
         align-items: center;
         grid-gap: 2em;
-
     }
-    
+
     .brand-logo img {
         width: 80px;
         padding-left: 30px;
@@ -344,7 +408,7 @@ start media queries for responsive
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 80px;
     }
     .card {
         width: 400px;
